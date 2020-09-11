@@ -13,9 +13,9 @@ userid_table = {u.id: u for u in users}
 
 def authenticate(username, password):
     user = username_table.get(username, None)
-    teste = generate_password_hash(user.password, method='md5')
-    print(teste)
-    if user and safe_str_cmp(user.password.encode('utf-8'), teste): #password.encode('utf-8')):
+    # teste = generate_password_hash(user.password, method='md5')
+    # print(teste)
+    if user and safe_str_cmp(user.password.encode('utf-8'), password.encode('utf-8'))):
         return user
 
 
