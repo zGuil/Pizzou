@@ -1,6 +1,6 @@
 from flask_jwt import JWT, jwt_required, current_identity
 from werkzeug.security import safe_str_cmp, check_password_hash, generate_password_hash
-from models.users import Users
+from models.maneger import Users
 from flask import Flask
 import hashlib
 
@@ -15,7 +15,7 @@ def authenticate(username, password):
     user = username_table.get(username, None)
     # teste = generate_password_hash(user.password, method='md5')
     # print(teste)
-    if user and safe_str_cmp(user.password.encode('utf-8'), password.encode('utf-8'))):
+    if user and safe_str_cmp(user.password.encode('utf-8'), password.encode('utf-8')):
         return user
 
 
