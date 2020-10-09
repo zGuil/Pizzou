@@ -1,4 +1,4 @@
-from models.maneger import Produto
+from models.manager import Produto
 
 
 def insert_produtos(body):

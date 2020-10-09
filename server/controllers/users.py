@@ -1,6 +1,6 @@
 from flask_jwt import JWT, jwt_required, current_identity
 from werkzeug.security import safe_str_cmp, check_password_hash, generate_password_hash
-from models.maneger import Users
+from models.manager import Users
 from flask import Flask
 import hashlib
 
