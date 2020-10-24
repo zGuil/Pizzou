@@ -3,7 +3,11 @@ from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 from __init__ import app
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:root@localhost:3306/pizzou'
+# Local
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:root@localhost:3306/pizzou'
+
+# Prod
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://admin:Pizzou1234@db-ope-pizzou.ct2bcpzzh2py.us-east-1.rds.amazonaws.com:3306/pizzou'
 
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
