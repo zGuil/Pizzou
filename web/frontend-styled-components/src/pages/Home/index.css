@@ -1,18 +1,29 @@
-.field-group {
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
+.logo-main {
+  display: flex;
+  justify-content: center;
 }
 
-.field-group span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Ubuntu;
-    color: limegreen;
-    font-size: 22px;
+.logo-main img {
+  width: 414px;
+  margin-bottom: 139px;
+  margin-top: 100px;
 }
- 
+
+.field-group {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.field-group span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Ubuntu;
+  color: black;
+  font-size: 22px;
+}
+
 .field:hover {
-    background-color: green;
+  background-color: #ddd;
 }
